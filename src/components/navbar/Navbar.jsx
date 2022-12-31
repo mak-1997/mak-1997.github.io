@@ -9,7 +9,7 @@ import {ImBooks} from 'react-icons/im';
 export const Navbar = () => {
   return (
     <nav>
-      <a href='#'> <AiOutlineHome/> </a>
+      <a href='#' className="active"> <AiOutlineHome/> </a>
       <a href='#about'> <AiOutlineUser/> </a>
       <a href='#qualification'> <BiBook/> </a>
       <a href='#skills'> <ImBooks/> </a>
