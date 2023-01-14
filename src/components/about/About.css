@@ -1,0 +1,11 @@
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.about__content{
+    max-width: 500px;
+    text-align: center;
+    /* border: 1px solid; */
+}
