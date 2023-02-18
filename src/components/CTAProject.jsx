@@ -7,10 +7,8 @@ import {
   Text,
   Button,
   Image,
-  IconButton,
   HStack,
 } from "@chakra-ui/react";
-import { transform } from "framer-motion";
 
 export default function CTAProject({
   id,
@@ -23,7 +21,7 @@ export default function CTAProject({
   live,
 }) {
   return (
-    <Container maxWidth={{ base: "100%", md: "80%" }} marginTop={"-20"} >
+    <Container maxWidth={{ base: "100%", md: "80%" }} marginTop={"-20"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -36,12 +34,14 @@ export default function CTAProject({
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text as={"span"} color={"#01497C"} className="project-title" >
+            <Text as={"span"} color={"#01497C"} className="project-title">
               {title}
             </Text>
           </Heading>
-          <Text color={"gray.500"} className="project-description" >{description}</Text>
-          <Box textAlign={"left"} >
+          <Text color={"gray.500"} className="project-description">
+            {description}
+          </Text>
+          <Box textAlign={"left"}>
             <Text as="b">Features : </Text>
             {features.map((elem) => {
               return <Text>• {elem} </Text>;
@@ -50,7 +50,12 @@ export default function CTAProject({
           <HStack>
             <Text as="b">Tech Stacks : </Text>
             {techStacks.map((elem) => {
-              return <Text as="b" className="project-tech-stack" > {elem} </Text>;
+              return (
+                <Text as="b" className="project-tech-stack">
+                  {" "}
+                  {elem}{" "}
+                </Text>
+              );
             })}
           </HStack>
           <Stack
@@ -93,6 +98,7 @@ export default function CTAProject({
           w={"full"}
         >
           <Box
+            _hover={{ transform: "scale(1.2)" }}
             position={"relative"}
             height={"300px"}
             rounded={"2xl"}
@@ -100,19 +106,7 @@ export default function CTAProject({
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            />
             <Image
-              _hover={{transform : "scale(1.2)"}}
               alt={"Hero Image"}
               fit={"cover"}
               align={"center"}
