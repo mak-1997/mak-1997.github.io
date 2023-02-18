@@ -1,48 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import CalendarHeatmap from 'react-calendar-heatmap';
-import 'react-calendar-heatmap/dist/styles.css';
+import React from 'react';
+import {Box, Heading} from '@chakra-ui/react';
+import GitHubCalendar from "react-github-calendar";
 
-function GithubCalendar({ username }) {
-  const [contributionData, setContributionData] = useState([]);
-
-  useEffect(() => {
-    async function fetchContributionData() {
-      const response = await fetch(`https://api.github.com/users/${username}/events`);
-      const data = await response.json();
-      const contributionData = parseContributionData(data);
-      setContributionData(contributionData);
-    }
-    fetchContributionData();
-  }, [username]);
-
-  function parseContributionData(data) {
-    const contributions = {};
-    data.forEach(event => {
-      if (event.type === 'PushEvent') {
-        const date = new Date(event.created_at).toISOString().substring(0, 10);
-        if (contributions[date]) {
-          contributions[date]++;
-        } else {
-          contributions[date] = 1;
-        }
-      }
-    });
-    return Object.entries(contributions).map(([date, count]) => ({
-      date,
-      count,
-    }));
-  }
-
+const GithubCalendar = () => {
   return (
     <div>
-      <h2>Github Contributions</h2>
-      <CalendarHeatmap
-        startDate={new Date('2022-01-01')}
-        endDate={new Date()}
-        values={contributionData}
-      />
+       <Box
+        margin={"20px auto"}
+        justifyContent={"center"}
+        boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+        padding={"20px"}
+        width={{ base: "90%", sm: "80%" }}
+        borderRadius={"20px"}
+        gap="20px"
+      >
+        <Heading style={{ color: "yellowgreen", textAlign: "center" }}>
+          GitHub Calendar
+        </Heading>
+        <GitHubCalendar username="mak-1997" fontSize={16} />
+      </Box>
     </div>
-  );
+  )
 }
 
-export default GithubCalendar;
+export default GithubCalendar

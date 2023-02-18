@@ -42,7 +42,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box position={"sticky"} top="0px" zIndex={"9999"}>
+    <Box position={"sticky"} top="0px" zIndex={"9999"} >
       <Box bg={useColorModeValue("#01497C", "gray.100")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
