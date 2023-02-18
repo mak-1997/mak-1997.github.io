@@ -36,7 +36,7 @@ export default function CTAProject({
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text as={"span"} color={"red.400"} className="project-title" >
+            <Text as={"span"} color={"#01497C"} className="project-title" >
               {title}
             </Text>
           </Heading>
