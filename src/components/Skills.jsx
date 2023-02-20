@@ -23,7 +23,7 @@ import GithubCalendar from "./GithubCalendar";
 
 const Skills = () => {
   return (
-    <Box data-testid="skills" paddingTop="100">
+    <Box id="skills" paddingTop="100">
       <Container maxWidth={{ base: "100%", md: "80%" }}>
         <Box>
           <Text fontSize="3xl" as="b">

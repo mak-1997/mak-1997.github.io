@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <Box data-testid="contact">
+    <Box id="contact">
       <VStack marginBottom={"5"}>
         <Text as="b" fontSize="3xl">
           Get In Touch
@@ -13,13 +13,13 @@ const Contact = () => {
         <Text as="b" fontSize={"3xl"}>
           Mayank Singh
         </Text>
-        <Text as="b" fontSize={"2xl"} data-testid="contact-phone">
+        <Text as="b" fontSize={"2xl"} id="contact-phone">
           Phone : +91-8077-01-6076
         </Text>
       </VStack>
       <HStack justifyContent={"center"} marginBottom={"5"}>
         <BsLinkedin
-          data-testid="contact-linkedin"
+          id="contact-linkedin"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/in/mayank-singh-ab196110b/",
@@ -29,12 +29,12 @@ const Contact = () => {
           size="30px"
         />
         <BsGithub
-          data-testid="contact-github"
+          id="contact-github"
           onClick={() => window.open("https://github.com/mak-1997", "_blank")}
           size="30px"
         />
         <MdEmail
-          data-testid="contact-email"
+          id="contact-email"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/in/mayank-singh-ab196110b/",

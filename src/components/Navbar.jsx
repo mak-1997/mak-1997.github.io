@@ -42,7 +42,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box position={"sticky"} top="0px" zIndex={"9999"} data-testid="nav-menu" >
+    <Box position={"sticky"} top="0px" zIndex={"9999"} id="nav-menu" >
       <Box bg={useColorModeValue("#01497C", "gray.100")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -80,7 +80,7 @@ export default function Navbar() {
               href={Mayank_Singh_Resume}
               download="Mayank_Singh_Resume.pdf"
               className="nav-link resume"
-              data-testid="resume-link-1"
+              id="resume-link-1"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/14NdvUOo7lnNPL5OwgahQTmUjyck_lfMZ/view?usp=sharing",
