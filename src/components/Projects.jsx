@@ -47,7 +47,7 @@ const Projects = () => {
       title: "Ajio Clone",
       description:
         "Ajio is an e-commerce website dealing with fashion, beauty, and wellness products.",
-      features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
+      features: ["Home Page", "Login & Sign Up Page", "Men's, Women's & Kid's Page","Cart Page", "Add to cart & Remove from Cart functionality"],
       techStacks: ["REACT JS", "CHAKRA UI", "CSS", "NODE JS"],
       github: "https://github.com/piyushkhurana8744/-prompt-wilderness-693",
       live: "https://ajio-app.vercel.app/",
@@ -60,7 +60,7 @@ const Projects = () => {
         <Text fontSize="3xl" as="b">
           My Projects
         </Text>
-        {projectData.map((elem) => (
+        {projectData.reverse().map((elem) => (
           <CTAProject key={elem.id} {...elem} />
         ))}
       </Box>
