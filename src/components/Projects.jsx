@@ -55,7 +55,7 @@ const Projects = () => {
   ];
 
   return (
-    <Box id="projects" paddingTop={"100"}>
+    <Box data-testid="projects" paddingTop={"100"}>
       <Box>
         <Text fontSize="3xl" as="b">
           My Projects
