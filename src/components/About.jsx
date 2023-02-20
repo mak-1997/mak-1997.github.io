@@ -6,7 +6,7 @@ import { Box, Image, Text, Button } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box  id="about" paddingTop="100" paddingLeft={{ md: "100" }} paddingRight={{ md: "100" }}  >
+    <Box  id="about" className="about section" paddingTop="100" paddingLeft={{ md: "100" }} paddingRight={{ md: "100" }}  >
       <Text fontSize="3xl" as="b">
         About Me
       </Text>

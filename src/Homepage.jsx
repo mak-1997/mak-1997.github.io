@@ -9,12 +9,12 @@ import {Box, Divider} from '@chakra-ui/react';
 const Homepage = () => {
   return (
     <Box bg="#FEFAE0" >
-      <Navbar id="nav-menu"  />
-      <About id="about" className="about section" />
-      <Skills id="skills"  />
-      <Projects id="projects" />
+      <Navbar   />
+      <About  />
+      <Skills   />
+      <Projects  />
       <Divider />
-      <Contact id="contact" />
+      <Contact  />
     </Box>
   );
 };
