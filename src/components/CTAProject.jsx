@@ -21,7 +21,7 @@ export default function CTAProject({
   live,
 }) {
   return (
-    <Container maxWidth={{ base: "100%", md: "80%" }} marginTop={"-20"}>
+    <Container maxWidth={{ base: "100%", md: "80%" }} marginTop={"-20"} className="project-card" >
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}

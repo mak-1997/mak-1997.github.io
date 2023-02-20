@@ -80,7 +80,7 @@ export default function Navbar() {
               href={Mayank_Singh_Resume}
               download="Mayank_Singh_Resume.pdf"
               className="nav-link resume"
-              id="resume-link-1"
+              id="resume-button-1"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/14NdvUOo7lnNPL5OwgahQTmUjyck_lfMZ/view?usp=sharing",
