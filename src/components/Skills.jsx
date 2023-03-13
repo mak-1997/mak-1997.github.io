@@ -23,7 +23,7 @@ import GithubCalendar from "./GithubCalendar";
 
 const Skills = () => {
   return (
-    <Box id="skills" className="skills-card" paddingTop="100">
+    <Box id="skills"  paddingTop="100">
       <Container maxWidth={{ base: "100%", md: "80%" }}>
         <Box>
           <Text fontSize="3xl" as="b">
@@ -39,6 +39,7 @@ const Skills = () => {
             lg: "repeat(5,1fr)",
           }}
           gap="6"
+          className="skills-card"
         >
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={html5} alt="html" />{" "}

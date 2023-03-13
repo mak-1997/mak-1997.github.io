@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import {Box, Divider} from '@chakra-ui/react';
+import GithubStats from './components/GithubStats';
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Navbar   />
       <About  />
       <Skills   />
+      <GithubStats />
       <Projects  />
       <Divider />
       <Contact  />
