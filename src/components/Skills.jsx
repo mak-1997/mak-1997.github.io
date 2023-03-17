@@ -19,7 +19,6 @@ import {
   Image,
   GridItem,
 } from "@chakra-ui/react";
-import GithubCalendar from "./GithubCalendar";
 
 const Skills = () => {
   return (
@@ -96,7 +95,6 @@ const Skills = () => {
             <Text as="b" className="skills-card-name">Git</Text>
           </GridItem>
         </Grid>
-        <GithubCalendar className="react-activity-calendar" username={"mak-1997"}  />
       </Container>
     </Box>
   );
