@@ -6,7 +6,13 @@ import { Box, Image, Text, Button } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box  id="about" className="about section" paddingTop="100" paddingLeft={{ md: "100" }} paddingRight={{ md: "100" }}  >
+    <Box
+      id="about"
+      className="about section"
+      paddingTop="100"
+      paddingLeft={{ md: "100" }}
+      paddingRight={{ md: "100" }}
+    >
       <Text fontSize="3xl" as="b">
         About Me
       </Text>
@@ -24,7 +30,7 @@ const About = () => {
         </Box>
         <Box
           width={{ base: "100%", md: "550px" }}
-          marginTop={{base:"30", md:"0"}}
+          marginTop={{ base: "30", md: "0" }}
           height="fit-content"
         >
           <Text fontSize="lg" as="b" id="user-detail-name">
@@ -39,7 +45,6 @@ const About = () => {
             as="a"
             rightIcon={<DownloadIcon />}
             href={Mayank_Singh_Resume}
-            download="Mayank_Singh_Resume.pdf"
             className="nav-link resume"
             id="resume-button-2"
             onClick={() =>
@@ -48,6 +53,7 @@ const About = () => {
                 "_blank"
               )
             }
+            download="Mayank_Singh_Resume.pdf"
           >
             {" "}
             Resume
