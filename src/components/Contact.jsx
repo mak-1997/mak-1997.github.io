@@ -18,7 +18,6 @@ import { FaPhone } from "react-icons/fa";
 
 import emailjs from "emailjs-com";
 
-
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const toast = useToast();
@@ -40,27 +39,29 @@ const Contact = () => {
         form.current,
         "j3fgWtwIDM0cW16rT"
       )
-      .then((result) => {
-        toast({
-          title: "Email sent!",
-          description:
-            "Thanks for contacting us. We will get back to you soon.",
-          status: "success",
-          duration: 5000,
-          isClosable: true,
-        });
-        event.target.reset();
-      },
-      (error) => {
-        console.error(error);
-        toast({
-          title: "Error!",
-          description: "Something went wrong. Please try again later.",
-          status: "error",
-          duration: 5000,
-          isClosable: true,
-        });
-      });
+      .then(
+        (result) => {
+          toast({
+            title: "Email sent!",
+            description:
+              "Thanks for contacting us. We will get back to you soon.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
+          event.target.reset();
+        },
+        (error) => {
+          console.error(error);
+          toast({
+            title: "Error!",
+            description: "Something went wrong. Please try again later.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      );
   };
 
   const handleSubmit = async (event) => {
@@ -100,23 +101,58 @@ const Contact = () => {
             Send
           </Button>
         </Box>
-        <Box marginTop={"5"} >
-          <HStack justifyContent={"center"} _hover={{ cursor: "pointer"}} color="#01497C">
-          <BsFillTelephoneFill id="contact-phone"
-              onClick={() =>{
-                navigator.clipboard.writeText('+91 8077016076');
+        <Box marginTop={"3"}>
+          <HStack
+            _hover={{ cursor: "pointer" }}
+            margin={"auto"}
+            justifyContent={"center"}
+            color="#01497C"
+            id="contact-phone"
+            marginTop={"3"}
+          >
+            <MdEmail
+              onClick={() =>
+                window.open("mailto: mnksingh337@gmail.com", "_blank")
+              }
+              size="30px"
+            />
+            <Text as="b" fontSize={"lg"} id="contact-email">
+              {" "}
+              : mnksingh337@gmail.com
+            </Text>
+          </HStack>
+          <HStack
+            _hover={{ cursor: "pointer" }}
+            margin={"auto"}
+            justifyContent={"center"}
+            color="#01497C"
+            marginTop={"3"}
+          >
+            <BsFillTelephoneFill
+              onClick={() => {
+                navigator.clipboard.writeText("+91 8077016076");
                 toast({
                   title: "Number copied!",
-                  description:
-                    "+91 8077016076",
+                  description: "+91 8077016076",
                   status: "success",
                   duration: 3000,
                   isClosable: true,
                 });
               }}
-              size="30px"/>
+              size="25px"
+            />
+            <Text as="b" fontSize={"lg"} id="contact-phone">
+              {" "}
+              : +91 8077016076
+            </Text>
+          </HStack>
+          <HStack
+            marginTop={"3"}
+            justifyContent={"center"}
+            _hover={{ cursor: "pointer" }}
+            color="#01497C"
+          >
             <BsLinkedin
-              
               id="contact-linkedin"
               onClick={() =>
                 window.open(
@@ -133,21 +169,10 @@ const Contact = () => {
               }
               size="30px"
             />
-            <MdEmail
-              id="contact-email"
-              onClick={() =>
-                window.open(
-                  "mailto: mnksingh337@gmail.com",
-                  "_blank"
-                )
-              }
-              size="30px"
-            />
-            
           </HStack>
         </Box>
       </Container>
-      <Text as="b" fontSize={"lg"} color="#01497C">
+      <Text as="b" fontSize={"xl"} color="#01497C" marginTop={"3"}>
         Thank You
       </Text>
     </Box>

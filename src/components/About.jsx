@@ -35,7 +35,6 @@ const About = () => {
             are helpful for masses and serve as a greate helpful entity.
           </Text>
           <Button
-          
             marginTop="5"
             as="a"
             rightIcon={<DownloadIcon />}
