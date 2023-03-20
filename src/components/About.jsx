@@ -45,7 +45,8 @@ const About = () => {
             as="a"
             rightIcon={<DownloadIcon />}
             href={Mayank_Singh_Resume}
-            className="nav-link resume"
+            download="Mayank_Singh_Resume.pdf"
+            // className="nav-link resume"
             id="resume-button-2"
             onClick={() =>
               window.open(
@@ -53,7 +54,6 @@ const About = () => {
                 "_blank"
               )
             }
-            download="Mayank_Singh_Resume.pdf"
           >
             {" "}
             Resume
