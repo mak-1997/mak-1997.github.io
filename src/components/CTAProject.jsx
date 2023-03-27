@@ -19,9 +19,14 @@ export default function CTAProject({
   techStacks,
   github,
   live,
+  logo,
 }) {
   return (
-    <Container maxWidth={{ base: "100%", md: "80%" }} marginTop={"-20"} className="project-card" >
+    <Container
+      maxWidth={{ base: "100%", md: "80%" }}
+      marginTop={"-20"}
+      className="project-card"
+    >
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -41,26 +46,41 @@ export default function CTAProject({
           <Text color={"gray.500"} className="project-description">
             {description}
           </Text>
-          <Box textAlign={"left"}>
-            <Text as="b">Features : </Text>
-            {features.map((elem) => {
-              return <Text>• {elem} </Text>;
-            })}
-          </Box>
-          <HStack>
-            <Text as="b">Tech Stacks : </Text>
-            {techStacks.map((elem) => {
-              return (
-                <Text as="b" className="project-tech-stack">
-                  {" "}
-                  {elem}{" "}
-                </Text>
-              );
-            })}
+
+          <HStack justifyContent={"center"}>
+            <Box textAlign={"left"}>
+              <Text as="b">Tech Stacks : </Text>
+              {techStacks.map((elem) => {
+                return (
+                  <Text
+                    _hover={{ transform: "scale(1.2)" }}
+                    className="project-tech-stack"
+                    fontSize={"1em"}
+                  >
+                    • {elem}{" "}
+                  </Text>
+                );
+              })}
+            </Box>
+            <Box paddingTop={"25px"}>
+              {logo.map((elem) => {
+                return (
+                  <Image
+                    _hover={{ transform: "scale(1.2)" }}
+                    className="skills-card-img"
+                    src={elem}
+                    width="25px"
+                    alt="reactjs"
+                  />
+                );
+              })}
+            </Box>
           </HStack>
+
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
+            justifyContent={"center"}
           >
             <Button
               rounded={"full"}

@@ -5,6 +5,17 @@ import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
+import reactjs from "../assets/reactjs.png";
+import chakraui from "../assets/chakraui.png";
+import css3 from "../assets/css3.png";
+import expressjs from "../assets/expressjs.png";
+import github from "../assets/github.png";
+import html5 from "../assets/html5.png";
+import javascript from "../assets/javascript.png";
+import mongodb from "../assets/mongodb.png";
+import nodejs from "../assets/nodejs.png";
+import redux from "../assets/redux.png";
+import typescript from "../assets/typescript.png";
 
 const Projects = () => {
   const projectData = [
@@ -16,6 +27,7 @@ const Projects = () => {
         "This a clone of an E- commerce website called shop.com, which offers coparision between products availabe on different websits and offers best deals ",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       techStacks: ["HTML", "CSS", "JS"],
+      logo:[html5,css3,javascript],
       github: "https://github.com/mak-1997/brisk-smash-9621",
       live: "https://dashing-crepe-158570.netlify.app/",
     },
@@ -27,6 +39,7 @@ const Projects = () => {
         "Nykaa is an e-commerce website dealing with fashion, beauty, and wellness products.",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       techStacks: ["HTML", "CSS", "JS"],
+      logo:[html5,css3,javascript],
       github: "https://github.com/mak-1997/groovy-airplane-6414",
       live: "https://sensational-torrone-ff2b20.netlify.app/",
     },
@@ -38,6 +51,7 @@ const Projects = () => {
         "Brand Shop is an e-commerce website dealing with Luxury items. ",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       techStacks: ["REACT JS", "CHAKRA UI", "CSS", "NODE JS"],
+      logo:[reactjs,chakraui,css3,nodejs],
       github: "https://github.com/mak-1997/fragile-hot-3247",
       live: "https://candid-crumble-7b020e.netlify.app/",
     },
@@ -49,6 +63,7 @@ const Projects = () => {
         "Ajio is an e-commerce website dealing with fashion, beauty, and wellness products.",
       features: ["Home Page", "Login & Sign Up Page", "Men's, Women's & Kid's Page","Cart Page", "Add to cart & Remove from Cart functionality"],
       techStacks: ["REACT JS", "CHAKRA UI", "CSS", "NODE JS"],
+      logo:[reactjs,chakraui,css3,nodejs],
       github: "https://github.com/piyushkhurana8744/-prompt-wilderness-693",
       live: "https://ajio-app.vercel.app/",
     },

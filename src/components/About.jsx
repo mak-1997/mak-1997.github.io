@@ -38,7 +38,7 @@ const About = () => {
           </Text>
           <Text fontSize="lg" id="user-detail-intro">
             An aspiring full stack MERN Developer. I love to make projects which
-            are helpful for masses and serve as a greate helpful entity.
+            are helpful for masses and serve as a great helpful entity.
           </Text>
           <Button
             marginTop="5"
@@ -46,7 +46,7 @@ const About = () => {
             rightIcon={<DownloadIcon />}
             href={Mayank_Singh_Resume}
             download="Mayank_Singh_Resume.pdf"
-            // className="nav-link resume"
+            className="nav-link resume"
             id="resume-button-2"
             onClick={() =>
               window.open(
