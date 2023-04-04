@@ -14,7 +14,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon, CloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import Mayank_Singh_Resume from "../assets/Mayank_Singh_Resume.pdf";
 
-const Links = ["About", "Skills", "Projects", "Contact"];
+const Links = ["Home","About", "Skills", "Projects", "Contact"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -61,7 +61,7 @@ export default function Navbar() {
               as="b"
               fontSize={"2xl"}
               fontStyle="italic"
-              className="nav-link home"
+              // className="nav-link home"
             >
               {" "}
               {"< Mayank />"}{" "}

@@ -60,7 +60,7 @@ const Projects = () => {
       imageSrc: project4,
       title: "Ajio Clone",
       description:
-        "Ajio is an e-commerce website dealing with fashion, beauty, and wellness products.",
+        "AJIO, a fashion and lifestyle brand, is Reliance Retail's digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you'll find anywhere.",
       features: ["Home Page", "Login & Sign Up Page", "Men's, Women's & Kid's Page","Cart Page", "Add to cart & Remove from Cart functionality"],
       techStacks: ["REACT JS", "CHAKRA UI", "CSS", "NODE JS"],
       logo:[reactjs,chakraui,css3,nodejs],

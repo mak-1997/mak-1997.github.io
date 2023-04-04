@@ -37,16 +37,11 @@ const About = () => {
             Hello, I'm Mayank Singh.
           </Text>
           <Text fontSize="lg" id="user-detail-intro">
-            An aspiring full stack MERN Developer. I love to make projects which
+            An aspiring fullstack MERN Developer. I love to make projects with HTML, CSS, React JS, Redux, NodeJS, ExpressJS and MongoDB which
             are helpful for masses and serve as a great helpful entity.
           </Text>
           <Button
             marginTop="5"
-            as="a"
-            rightIcon={<DownloadIcon />}
-            href={Mayank_Singh_Resume}
-            download="Mayank_Singh_Resume.pdf"
-            className="nav-link resume"
             id="resume-button-2"
             onClick={() =>
               window.open(
@@ -54,9 +49,21 @@ const About = () => {
                 "_blank"
               )
             }
-          >
+            rightIcon={<DownloadIcon />}
+            // as="a"
+            // className="nav-link resume"
+            >
             {" "}
-            Resume
+            <a 
+            id="resume-link-2"
+            href={Mayank_Singh_Resume}
+            rel="noreferrer"
+            target="_blank"
+            download="Mayank_Singh_Resume.pdf"
+            
+            >
+              Resume
+            </a>
           </Button>
         </Box>
       </Box>
