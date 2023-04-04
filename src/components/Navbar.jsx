@@ -14,7 +14,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon, CloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import Mayank_Singh_Resume from "../assets/Mayank_Singh_Resume.pdf";
 
-const Links = ["Home","About", "Skills", "Projects", "Contact"];
+const Links = ["Home", "About", "Skills", "Projects", "Contact"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -42,7 +42,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box position={"sticky"} top="0px" zIndex={"9999"} id="nav-menu" >
+    <Box position={"sticky"} top="0px" zIndex={"9999"} id="nav-menu">
       <Box bg={useColorModeValue("#01497C", "gray.100")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -75,21 +75,28 @@ export default function Navbar() {
           {/* </HStack> */}
           <Flex alignItems={"center"}>
             <Button
-              as="a"
-              rightIcon={<DownloadIcon />}
-              href={Mayank_Singh_Resume}
-              download="Mayank_Singh_Resume.pdf"
-              className="nav-link resume"
               id="resume-button-1"
+              className="nav-link resume"
+              marginTop="5"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/14NdvUOo7lnNPL5OwgahQTmUjyck_lfMZ/view?usp=sharing",
                   "_blank"
                 )
               }
+              rightIcon={<DownloadIcon />}
+              // as="a"
             >
               {" "}
-              Resume
+              <a
+                id="resume-link-1"
+                href={Mayank_Singh_Resume}
+                rel="noreferrer"
+                target="_blank"
+                download="Mayank_Singh_Resume.pdf"
+              >
+                Resume
+              </a>
             </Button>
           </Flex>
         </Flex>
