@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.1dab4bb4.js",
+    "main.js": "/static/js/main.4407a548.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/project2.png": "/static/media/project2.1af3734e27184500f437.png",
     "static/media/project3.png": "/static/media/project3.01cb4351741f74133aad.png",
     "static/media/project1.png": "/static/media/project1.5ec8cb8075c5de0e0fd7.png",
     "static/media/project4.png": "/static/media/project4.02bafc9d17bd3cbd3529.png",
-    "static/media/Mayank_Singh_Resume.pdf": "/static/media/Mayank_Singh_Resume.576c750f2a3edb0e28c0.pdf",
+    "static/media/project5.png": "/static/media/project5.67ae0a1248ad96b6f51c.png",
+    "static/media/project6.png": "/static/media/project6.911f54d2804fae1988b4.png",
+    "static/media/project7.png": "/static/media/project7.2deefca66c9f3fcca29c.png",
+    "static/media/Mayank-Singh-Resume.pdf": "/static/media/Mayank-Singh-Resume.90134b52c3bfa253a614.pdf",
     "static/media/profile_pic.jpg": "/static/media/profile_pic.d2971ad6b25c9fafdf1e.jpg",
     "static/media/mongodb.png": "/static/media/mongodb.4d1763a20af23f3dbc1d.png",
     "static/media/redux.png": "/static/media/redux.492ed7d54dd2352c5786.png",
@@ -16,13 +19,14 @@
     "static/media/html5.png": "/static/media/html5.be50d4568ab0cb01edb8.png",
     "static/media/expressjs.png": "/static/media/expressjs.551b076d3a202df33a0c.png",
     "static/media/github.png": "/static/media/github.68bbeafeade821944d14.png",
+    "static/media/tailwindcss.svg": "/static/media/tailwindcss.017e1e304e12384d156d384f40a4b5f8.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.1dab4bb4.js.map": "/static/js/main.1dab4bb4.js.map",
+    "main.4407a548.js.map": "/static/js/main.4407a548.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.1dab4bb4.js"
+    "static/js/main.4407a548.js"
   ]
 }
