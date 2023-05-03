@@ -1,7 +1,7 @@
 import React from "react";
 import My_Photo from "../assets/profile_pic.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
-import Mayank_Singh_Resume from "../assets/Mayank_Singh_Resume.pdf";
+import Mayank_Singh_Resume from "../assets/Mayank-Singh-Resume.pdf";
 import { Box, Image, Text, Button } from "@chakra-ui/react";
 
 const About = () => {

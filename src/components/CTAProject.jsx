@@ -48,8 +48,8 @@ export default function CTAProject({
           </Text>
 
           <HStack justifyContent={"center"}>
-            <Box textAlign={"left"}>
-              <Text as="b">Tech Stacks : </Text>
+            <Text as="b">Tech Stacks : </Text>
+            {/* <Box textAlign={"left"}>
               {techStacks.map((elem) => {
                 return (
                   <Text
@@ -61,8 +61,8 @@ export default function CTAProject({
                   </Text>
                 );
               })}
-            </Box>
-            <Box paddingTop={"25px"}>
+            </Box> */}
+            <Box  display="flex" gap="5" >
               {logo.map((elem) => {
                 return (
                   <Image

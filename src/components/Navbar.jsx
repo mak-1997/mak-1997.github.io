@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon, CloseIcon, DownloadIcon } from "@chakra-ui/icons";
-import Mayank_Singh_Resume from "../assets/Mayank_Singh_Resume.pdf";
+import Mayank_Singh_Resume from "../assets/Mayank-Singh-Resume.pdf";
 
 const Links = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -73,11 +73,11 @@ export default function Navbar() {
             ))}
           </HStack>
           {/* </HStack> */}
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"center"} >
             <Button
               id="resume-button-1"
               className="nav-link resume"
-              marginTop="5"
+              // marginTop="5"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/14NdvUOo7lnNPL5OwgahQTmUjyck_lfMZ/view?usp=sharing",
@@ -93,7 +93,7 @@ export default function Navbar() {
                 href={Mayank_Singh_Resume}
                 rel="noreferrer"
                 target="_blank"
-                download="Mayank_Singh_Resume.pdf"
+                download="Mayank-Singh-Resume.pdf"
               >
                 Resume
               </a>
