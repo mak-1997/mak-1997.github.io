@@ -8,8 +8,8 @@ const About = () => {
   return (
     <Box
       id="about"
-      className="about section"
       paddingTop="100"
+      className="about section"
       paddingLeft={{ md: "100" }}
       paddingRight={{ md: "100" }}
     >

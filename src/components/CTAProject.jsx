@@ -16,7 +16,6 @@ export default function CTAProject({
   title,
   description,
   features,
-  techStacks,
   github,
   live,
   logo,
@@ -26,6 +25,7 @@ export default function CTAProject({
       maxWidth={{ base: "100%", md: "80%" }}
       marginTop={"-20"}
       className="project-card"
+      key={id}
     >
       <Stack
         align={"center"}
@@ -49,29 +49,19 @@ export default function CTAProject({
 
           <HStack justifyContent={"center"}>
             <Text as="b">Tech Stacks : </Text>
-            {/* <Box textAlign={"left"}>
-              {techStacks.map((elem) => {
+            <Box display="flex" gap="5">
+              {logo.map((elem, index) => {
                 return (
-                  <Text
-                    _hover={{ transform: "scale(1.2)" }}
-                    className="project-tech-stack"
-                    fontSize={"1em"}
-                  >
-                    • {elem}{" "}
-                  </Text>
-                );
-              })}
-            </Box> */}
-            <Box  display="flex" gap="5" >
-              {logo.map((elem) => {
-                return (
-                  <Image
-                    _hover={{ transform: "scale(1.2)" }}
-                    className="skills-card-img"
-                    src={elem}
-                    width="25px"
-                    alt="reactjs"
-                  />
+                  <Box key={index}>
+                    <Image
+                      title={elem.name}
+                      _hover={{ transform: "scale(1.2)" }}
+                      className="skills-card-img"
+                      src={elem.image}
+                      width="25px"
+                      alt={elem.name}
+                    />
+                  </Box>
                 );
               })}
             </Box>

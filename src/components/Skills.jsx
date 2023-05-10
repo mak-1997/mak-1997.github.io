@@ -11,18 +11,11 @@ import nodejs from "../assets/nodejs.png";
 import redux from "../assets/redux.png";
 import typescript from "../assets/typescript.png";
 
-import {
-  Box,
-  Container,
-  Text,
-  Grid,
-  Image,
-  GridItem,
-} from "@chakra-ui/react";
+import { Box, Container, Text, Grid, Image, GridItem } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <Box id="skills"  paddingTop="100">
+    <Box id="skills" paddingTop="100">
       <Container maxWidth={{ base: "100%", md: "80%" }}>
         <Box>
           <Text fontSize="3xl" as="b">
@@ -42,57 +35,91 @@ const Skills = () => {
         >
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={html5} alt="html" />{" "}
-            <Text as="b" className="skills-card-name">HTML</Text>
+            <Text as="b" className="skills-card-name">
+              HTML
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={css3} alt="css3" />{" "}
-            <Text as="b" className="skills-card-name">CSS</Text>
+            <Text as="b" className="skills-card-name">
+              CSS
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
-            <Image className="skills-card-img" src={javascript} alt="javascript" />{" "}
-            <Text as="b" className="skills-card-name">JavaScript</Text>
+            <Image
+              className="skills-card-img"
+              src={javascript}
+              alt="javascript"
+            />{" "}
+            <Text as="b" className="skills-card-name">
+              JavaScript
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={reactjs} alt="reactjs" />{" "}
-            <Text as="b" className="skills-card-name">React JS</Text>
+            <Text as="b" className="skills-card-name">
+              React JS
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={redux} alt="redux" />{" "}
-            <Text as="b" className="skills-card-name">Redux</Text>
+            <Text as="b" className="skills-card-name">
+              Redux
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
-            <Image className="skills-card-img" src={typescript} alt="typescript" />{" "}
-            <Text as="b" className="skills-card-name">Typescript</Text>
+            <Image
+              className="skills-card-img"
+              src={typescript}
+              alt="typescript"
+            />{" "}
+            <Text as="b" className="skills-card-name">
+              Typescript
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={nodejs} alt="nodejs" />{" "}
-            <Text as="b" className="skills-card-name">Node JS</Text>
+            <Text as="b" className="skills-card-name">
+              Node JS
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
-            <Image className="skills-card-img" src={expressjs} alt="expressjs" />{" "}
-            <Text as="b" className="skills-card-name">Express JS</Text>
+            <Image
+              className="skills-card-img"
+              src={expressjs}
+              alt="expressjs"
+            />{" "}
+            <Text as="b" className="skills-card-name">
+              Express JS
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={mongodb} alt="mongodb" />{" "}
-            <Text as="b" className="skills-card-name">Mongo DB</Text>
+            <Text as="b" className="skills-card-name">
+              Mongo DB
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={chakraui} alt="chakraui" />{" "}
-            <Text as="b" className="skills-card-name">Chakra UI</Text>
+            <Text as="b" className="skills-card-name">
+              Chakra UI
+            </Text>
           </GridItem>
 
           <GridItem w="150px" _hover={{ transform: "scale(1.2)" }}>
             <Image className="skills-card-img" src={github} alt="git" />{" "}
-            <Text as="b" className="skills-card-name">Git</Text>
+            <Text as="b" className="skills-card-name">
+              Git
+            </Text>
           </GridItem>
         </Grid>
       </Container>

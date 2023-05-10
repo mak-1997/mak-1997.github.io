@@ -73,7 +73,7 @@ export default function Navbar() {
             ))}
           </HStack>
           {/* </HStack> */}
-          <Flex alignItems={"center"} >
+          <Flex alignItems={"center"}>
             <Button
               id="resume-button-1"
               className="nav-link resume"

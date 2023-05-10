@@ -4,21 +4,21 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import {Box, Divider} from '@chakra-ui/react';
-import GithubStats from './components/GithubStats';
+import { Box, Divider } from "@chakra-ui/react";
+import GithubStats from "./components/GithubStats";
 import Home from "./components/Home";
 
 const Homepage = () => {
   return (
-    <Box bg="#FEFAE0" >
-      <Navbar   />
+    <Box bg="#FEFAE0">
+      <Navbar />
       <Home />
-      <About  />
-      <Skills   />
+      <About />
+      <Skills />
       <GithubStats />
-      <Projects  />
+      <Projects />
       <Divider />
-      <Contact  />
+      <Contact />
     </Box>
   );
 };
