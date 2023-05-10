@@ -26,7 +26,6 @@ const Home = () => {
           pauseFor: 1500,
           autoStart: true,
           loop: true,
-          // style: styles.typeWriterText,
         }}
       />
     </Box>
