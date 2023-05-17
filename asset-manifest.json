@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.fd1bfb95.js",
+    "main.js": "/static/js/main.fe9590b8.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/profile_pic.png": "/static/media/profile_pic.be90d809537513a26bee.png",
     "static/media/project2.png": "/static/media/project2.1af3734e27184500f437.png",
     "static/media/project3.png": "/static/media/project3.01cb4351741f74133aad.png",
     "static/media/project1.png": "/static/media/project1.5ec8cb8075c5de0e0fd7.png",
     "static/media/project4.png": "/static/media/project4.02bafc9d17bd3cbd3529.png",
     "static/media/project5.png": "/static/media/project5.67ae0a1248ad96b6f51c.png",
     "static/media/project6.png": "/static/media/project6.911f54d2804fae1988b4.png",
+    "static/media/profile_pic.png": "/static/media/profile_pic.8d62ab3e5499ec638281.png",
     "static/media/Mayank-Singh-Resume.pdf": "/static/media/Mayank-Singh-Resume.bcc1725e81d7d4b668b9.pdf",
     "static/media/project7.png": "/static/media/project7.2deefca66c9f3fcca29c.png",
     "static/media/mongodb.png": "/static/media/mongodb.4d1763a20af23f3dbc1d.png",
@@ -22,11 +22,11 @@
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.017e1e304e12384d156d384f40a4b5f8.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.fd1bfb95.js.map": "/static/js/main.fd1bfb95.js.map",
+    "main.fe9590b8.js.map": "/static/js/main.fe9590b8.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fd1bfb95.js"
+    "static/js/main.fe9590b8.js"
   ]
 }
