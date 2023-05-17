@@ -44,7 +44,7 @@ const Projects = () => {
       imageSrc: project2,
       title: "Nykaa Clone",
       description:
-        "Nykaa is an e-commerce website dealing with fashion, beauty, and wellness products.",
+        "Nykaa.com is an ecommerce website inspired from original nykaa.com where users can shop different category of items. In this website, any user can login, signup, add products, filter products and purchase them by applying coupons.",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       logo: [
         { image: html5, name: "HTML" },
@@ -59,7 +59,7 @@ const Projects = () => {
       imageSrc: project3,
       title: "Brand Shop",
       description:
-        "Brand Shop is an e-commerce website dealing with Luxury items. ",
+        "Brand Shop is the clone of mytheresa.com which is the finest edit in luxury fashion for women, men and kids.",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       logo: [
         { image: reactjs, name: "REACT JS" },
