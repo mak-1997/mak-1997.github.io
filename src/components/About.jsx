@@ -1,5 +1,5 @@
 import React from "react";
-import My_Photo from "../assets/profile_pic.jpg";
+import My_Photo from "../assets/profile_pic.png";
 import { DownloadIcon } from "@chakra-ui/icons";
 import Mayank_Singh_Resume from "../assets/Mayank-Singh-Resume.pdf";
 import { Box, Image, Text, Button } from "@chakra-ui/react";
@@ -25,7 +25,7 @@ const About = () => {
       >
         <Box display="flex" justifyContent={"center"}>
           <Box borderRadius={"50%"} overflow="hidden" width="fit-content">
-            <Image src={My_Photo} alt="Profile Pic" className="home-img" />
+            <Image src={My_Photo} alt="Profile Pic" className="home-img" width="300px" />
           </Box>
         </Box>
         <Box
@@ -33,9 +33,9 @@ const About = () => {
           marginTop={{ base: "30", md: "0" }}
           height="fit-content"
         >
-          <Text fontSize="lg" as="b" id="user-detail-name">
+          {/* <Text fontSize="lg" as="b" id="user-detail-name">
             Hello, I'm Mayank Singh.
-          </Text>
+          </Text> */}
           <Text fontSize="lg" id="user-detail-intro">
             An aspiring fullstack MERN Developer. I love to make projects with
             HTML, CSS, React JS, Redux, NodeJS, ExpressJS and MongoDB which are
