@@ -24,35 +24,35 @@ import websocket from "../assets/websocket.png";
 
 const Projects = () => {
   const projectData = [
-    {
-      id: 1,
-      imageSrc: project1,
-      title: "Shop Clone",
-      description:
-        "This a clone of an E- commerce website called shop.com, which offers coparision between products availabe on different websits and offers best deals ",
-      features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
-      logo: [
-        { image: html5, name: "HTML" },
-        { image: css3, name: "CSS" },
-        { image: javascript, name: "JS" },
-      ],
-      github: "https://github.com/mak-1997/brisk-smash-9621",
-      live: "https://dashing-crepe-158570.netlify.app/",
-    },
+    // {
+    //   id: 1,
+    //   imageSrc: project1,
+    //   title: "Shop Clone",
+    //   description:
+    //     "This a clone of an E- commerce website called shop.com, which offers coparision between products availabe on different websits and offers best deals ",
+    //   features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
+    //   logo: [
+    //     { image: html5, name: "HTML" },
+    //     { image: css3, name: "CSS" },
+    //     { image: javascript, name: "JS" },
+    //   ],
+    //   github: "https://github.com/mak-1997/brisk-smash-9621",
+    //   live: "https://dashing-crepe-158570.netlify.app/",
+    // },
     {
       id: 2,
       imageSrc: project2,
-      title: "Nykaa Clone",
+      title: "Beautify",
       description:
-        "Nykaa.com is an ecommerce website inspired from original nykaa.com where users can shop different category of items. In this website, any user can login, signup, add products, filter products and purchase them by applying coupons.",
+        "Beautify is an ecommerce website inspired from original nykaa.com where users can shop different category of items. In this website, any user can login, signup, add products, filter products and purchase them by applying coupons.",
       features: ["Home Page", "Login & Sign Up Page", "Exclusive Brands Page"],
       logo: [
         { image: html5, name: "HTML" },
         { image: css3, name: "CSS" },
         { image: javascript, name: "JS" },
       ],
-      github: "https://github.com/mak-1997/groovy-airplane-6414",
-      live: "https://sensational-torrone-ff2b20.netlify.app/",
+      github: "https://github.com/mak-1997/Beautify",
+      live: "https://nykaa-clone-seven.vercel.app/",
     },
     {
       id: 3,
@@ -67,8 +67,8 @@ const Projects = () => {
         { image: css3, name: "CSS" },
         { image: nodejs, name: "NODE JS" },
       ],
-      github: "https://github.com/mak-1997/fragile-hot-3247",
-      live: "https://candid-crumble-7b020e.netlify.app/",
+      github: "https://github.com/mak-1997/Brand-Shop",
+      live: "https://mytheresa.vercel.app/",
     },
     {
       id: 4,
@@ -118,9 +118,9 @@ const Projects = () => {
     {
       id: 6,
       imageSrc: project6,
-      title: "Meesho",
+      title: "Shop-on",
       description:
-        "Meesho is a social E- commerce platform based in India that allows individuals to start their own online businesses by selling products to their social network.",
+        "Shop-on is a social E- commerce platform based in India that allows individuals to start their own online businesses by selling products to their social network.",
       features: [
         "Home Page",
         "Login & Sign Up Page",
@@ -137,8 +137,8 @@ const Projects = () => {
         { image: expressjs, name: "Express JS" },
         { image: mongodb, name: "MongoDB" },
       ],
-      github: "https://github.com/puja2795/meesho",
-      live: "https://frontend-ochre-beta.vercel.app/",
+      github: "https://github.com/puja2795/Shop-on",
+      live: "https://shop-on-three.vercel.app/",
     },
     {
       id: 7,

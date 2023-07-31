@@ -16,8 +16,9 @@ import Mayank_Singh_Resume from "../assets/Mayank-Singh-Resume.pdf";
 
 const Links = ["Home", "About", "Skills", "Projects", "Contact"];
 
-const NavLink = ({ children }) => (
+const NavLink = ({ children, onClose }) => (
   <Link
+    // onClick={onClose}
     spy={true}
     as={ScrollLink}
     smooth={true}
@@ -69,7 +70,9 @@ export default function Navbar() {
           </Box>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
             {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
+              <NavLink key={link} onClose={onClose}>
+                {link}
+              </NavLink>
             ))}
           </HStack>
           {/* </HStack> */}
@@ -105,7 +108,9 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link} onClose={onClose}>
+                  {link}
+                </NavLink>
               ))}
             </Stack>
           </Box>
